@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from './MainPage';
-import DetailPage from './detailPage';
-import WishListPage from './wishListPage';
+import LandingPage from './landing-page';
+import ResultsPage from './results-page';
 
 class App extends React.Component {
   
@@ -10,9 +9,8 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/detailsPage' element={<DetailPage/>}/>
-          <Route path='/detailsPage/wishlistPage' element={<WishListPage/>}/>
+          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/resultsPage' element={<ResultsPage/>}/>
         </Routes>
       </BrowserRouter>
     );
